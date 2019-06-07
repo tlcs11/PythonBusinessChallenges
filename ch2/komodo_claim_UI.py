@@ -20,15 +20,15 @@ while True:
     choice = input("Which option > ") 
 
     if choice == "1":
-        print("ClaimID    Type             Amount      DateOfAccident  DateOfClaim      IsValid     Description")
+        print("ClaimID    Type      Amount      DateOfAccident  DateOfClaim      IsValid     Description")
         for entry in claims:                                      #always (1)for (2) entry (3) in (4) the name of the list (5) :
             print(entry) 
     elif choice == "2":
         if claims:
             next_claim = claims[0]
-            print("ClaimID    Type             Amount      DateOfAccident  DateOfClaim      IsValid     Description")
+            print("ClaimID    Type     Amount      DateOfAccident  DateOfClaim      IsValid     Description")
             print(next_claim)
-            resp = input("Handel Claim? Y/N")
+            resp = input("Manage next claim? Y/N")
             if resp == "Y":
                 claims.remove(next_claim)
                 print("The claim has been resolved")

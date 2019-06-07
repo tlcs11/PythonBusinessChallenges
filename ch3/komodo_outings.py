@@ -7,5 +7,5 @@ class Outing:
         self.costperperson = costperperson
 
     def __repr__(self):
-        return f"{self.eventday}                  {self.eventtype}                     {self.costofevent}     {self.numberofpeople}     {self.costperperson}"
+        return f"{self.eventday}           {self.eventtype}                     {self.costofevent}                {self.numberofpeople}               {self.costperperson}"
 

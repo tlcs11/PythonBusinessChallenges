@@ -24,7 +24,7 @@ Please choose an option:
         outings.append(new_outing)
         print(outings)
     elif choice == "2":
-        print ("{Day_of_Event   Eventtype   Costofevent    people_attending  Costperperson")
+        print ("Event Date        Type of Event            Total Cost      # of people         Cost per person")
         for e in outings:
             print(e)
 
@@ -36,6 +36,7 @@ Please choose an option:
 
     elif choice == "4":
         t_total = 0
+        print (outings)
         event = input("What event total are you interested in: ").lower()
         for e in outings:
             if e.eventtype == event:
