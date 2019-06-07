@@ -17,7 +17,7 @@ Komodo Menu:
     def run(self):
         while True:
             self.display_menu()
-            choice = input("What would you like to do:  ")
+            choice = input("What would you like to do today:  ")
             if choice == "1":
                 self.add_to_list()
             elif choice == "2":
